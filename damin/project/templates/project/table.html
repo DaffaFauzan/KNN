@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+		.sidenav {
+			height:100%;
+			width:160px;
+			position: fixed;
+			z-index:1;
+			top:0;
+			left:0;
+			background-color: #C4C4C4;
+			overflow-x:hidden;
+			padding-top:50px;
+		}
+ 
+		.sidenav a {
+			padding:6px 8px 6px 16px;
+			text-decoration: none;
+			font-size:20px;
+			color:black;
+			display:block;
+            font-weight: 500;
+		}
+ 
+		.sidenav a:hover{
+			color:#f1f1f1;
+		}	
+ 
+		.main{
+			margin-left:180px;
+			padding: 10px 20px;
+		}
+        
+
+	</style>
+    <title>{% block title %}Project Damin{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+ 
+<body>
+	<div class="sidenav">
+		<a href="{% url "project:proses" %}">Proses</a>
+		<a href="{% url "project:desc" %}">Deskripsi Data</a>
+		<a href="{% url "project:table" %}">Table</a>
+		<a href="{% url "project:visualisasi" %}">Visualisasi</a>
+		<a href="{% url "project:data" %}">Desc Data</a>
+    </div>
+ 
+    {% block content %}
+    <div class="main">
+        <h2>Table</h2>
+        <hr>
+        <h3>ini content</h3>
+    </div>
+	{% endblock %}
+ 
+</body>
+</html>
