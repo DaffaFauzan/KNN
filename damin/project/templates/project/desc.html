@@ -32,6 +32,9 @@
 			padding: 10px 20px;
 		}
         
+		.item-header{
+
+		}
 
 	</style>
     <title>{% block title %}Project Damin{% endblock %}</title>
@@ -51,10 +54,39 @@
  
     {% block content %}
     <div class="main">
-        <h2>Descripsi Data</h2>
+        <h2>Data Description</h2>
         <hr>
-        <h3>ini content</h3>
-    </div>
+		<div class="card bg-light mb-3" style="max-width: 25rem;">
+			<div class="card-header">
+				General
+			</div>
+			<div class="container m-2">
+				<div class="row">
+					<div class="col-4">
+						Keterangan 1
+					</div>
+					<div class="col-8">
+						Variable width content
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card bg-light mb-3" style="max-width: 25rem;">
+			<div class="card-header">
+				Removing Outliers
+			</div>
+			<div class="container m-2">
+				<div class="row">
+					<div class="col-4">
+						Keterangan 1
+					</div>
+					<div class="col-8">
+						Variable width content
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	{% endblock %}
  
 </body>
