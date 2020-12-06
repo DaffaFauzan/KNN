@@ -31,6 +31,15 @@
 			margin-left:180px;
 			padding: 10px 20px;
 		}
+
+		.content{
+			border: black 2px solid;
+			padding: 10px 10px 10px 10px;
+		}
+
+		table, th, td {
+			border: 1px solid black;
+		}
         
 
 	</style>
@@ -52,8 +61,26 @@
     {% block content %}
     <div class="main">
         <h2>Table</h2>
-        <hr>
-        <h3>ini content</h3>
+		<hr>
+		<div class="content">
+			<table style="width:100%">
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Age</th>
+				</tr>
+				<tr>
+					<td>Jill</td>
+					<td>Smith</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Eve</td>
+					<td>Jackson</td>
+					<td>94</td>
+				</tr>
+			</table>
+		</div>
     </div>
 	{% endblock %}
  
